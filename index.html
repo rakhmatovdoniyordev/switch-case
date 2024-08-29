@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Date haqida ma'lumot</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="content">
+        <h1>new Date() haqida ma'lumot</h1>
+        <p>JavaScript-da <span>Date</span> obyekti vaqt va sana bilan ishlash uchun ishlatiladi</p>
+        <p>Date obyekti yaratishning bir nechta usullari mavjud:</p>
+        <h2> Joriy vaqt va sanani olish:</h2>
+        <img src="./assets/1.png" alt="">
+        <h2>Belgilangan vaqt va sanani yaratish:</h2>
+        <img src="./assets/2.png" alt="">
+        <p>Eslatma: Oylar 0 dan 11 gacha sanaladi, ya'ni Yanvar 0, Dekabr esa 11.</p>
+        <p>Vaqtni millisekundlarda ifodalash <br> JavaScript-da Date obyekti 1970-yil 1-yanvar UTCdan boshlab o‘tgan vaqtni millisekundlarda o‘lchaydi.</p>
+        <img src="./assets/3.png" alt="">
+        <h2> Sana va vaqtni string sifatida yaratish:</h2>
+        <img src="./assets/4.png" alt="">
+        <p>Date obyekti bir nechta foydali metodlarga ega bo'lib, ular yordamida vaqt va sana ma'lumotlarini olish va o'zgartirish mumkin.</p>
+        <ul>
+            <li>getFullYear(): Yilni qaytaradi.</li>
+            <li>getMonth(): Oylarni 0 dan 11 gacha qaytaradi.</li>
+            <li>getDate(): Sanani qaytaradi (1 dan 31 gacha).</li>
+            <li>getDay(): Haftaning kunini qaytaradi (Yakshanba = 0, Dushanba = 1, va hokazo).</li>
+            <li>getHours(): Soatni qaytaradi.</li>
+            <li>getMinutes(): Daqiqalarni qaytaradi.</li>
+            <li>getSeconds(): Soniyalarni qaytaradi.</li>
+            <li>getMilliseconds(): Millisekundlarni qaytaradi.</li>
+            <li>getTime(): 1970-yil 1-yanvardan boshlab o'tgan vaqtni millisekundlarda qaytaradi.</li>
+        </ul>
+        <h2>Sana va Vaqtni Formatlash</h2>
+        <ul>
+            <li>toISOString(): ISO 8601 formatida stringni qaytaradi.</li>
+            <li>toDateString(): Faqat sana qismini qaytaradi.</li>
+            <li>toTimeString(): Faqat vaqt qismini qaytaradi.</li>
+            <li>toLocaleDateString(): Mahalliy sana formatida qaytaradi.</li>
+            <li>toLocaleTimeString(): Mahalliy vaqt formatida qaytaradi.</li>
+        </ul>
+        <h2>Sana va vaqt ma'lumotlarini o'zgartirish</h2>
+        <ul>
+            <li>setFullYear(year): Yilni o'rnatadi.</li>
+            <li>setMonth(month): Oyni o'rnatadi.</li>
+            <li>setDate(day): Kun sanasini o'rnatadi.</li>
+            <li>setHours(hours): Soatni o'rnatadi.</li>
+            <li>setMinutes(minutes): Daqiqalarni o'rnatadi.</li>
+            <li>setSeconds(seconds): Soniyalarni o'rnatadi.</li>
+            <li>setMilliseconds(ms): Millisekundlarni o'rnatadi.</li>
+            <li>setTime(milliseconds): O'tgan millisekundlarni o'rnatadi.</li>
+        </ul>
+
+        <div class="date">
+            <h3 id="full-day">
+              Day Month, Year
+            </h3>
+            <div class="time-container">
+              <span id="hour">Hh</span>
+              :
+              <span id="minute">Mm</span>
+              :
+              <span id="second">Ss</span>
+            </div>
+          </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
